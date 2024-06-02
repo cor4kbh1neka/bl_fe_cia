@@ -323,6 +323,7 @@
   }
   
   .secruntext {
+    width: 100%;
     display: flex;
     align-items: center;
     padding: 5px 0;
@@ -6552,6 +6553,15 @@
   }
   .textcredit {
     color: #e59f26;
+  }
+  .dekstop .secsbobetopsi {
+    position: absolute;
+    max-width: 75%;
+    left: unset;
+    right: 0;
+  }
+  .dekstop .closeshowme {
+    right: 30%;
   }
   
   @media screen and (max-width: 425px) {
