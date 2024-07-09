@@ -6551,8 +6551,16 @@
       font-size: 15px;
       line-height: 20px;
   }
-  .textcredit {
+  .textcredit,
+  .hasilconver {
     color: #e59f26;
+  }
+  .primary.lchat {
+    background: #e59f26;
+  }
+  .tombol.primary.lchat:hover {
+    background: transparent;
+    border: 1px solid #e59f26;
   }
   .dekstop .secsbobetopsi {
     position: absolute;

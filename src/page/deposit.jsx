@@ -566,7 +566,7 @@ export const DepositPage = () => {
           <Icon icon="cib:whatsapp" />
           Whatsapp
         </span>
-        <span className="tombol full primary" onClick={() => handleClick(11, "Live Chat", "Whatsapp 1")}>
+        <span className="tombol full primary lchat" onClick={() => handleClick(11, "Live Chat", "Whatsapp 1")}>
           <Icon icon="simple-icons:livechat" />
           Livechat
         </span>
@@ -585,7 +585,7 @@ export const DepositPage = () => {
           <Icon icon="cib:whatsapp" />
           Whatsapp
         </span>
-        <span className="tombol full primary" onClick={() => handleClick(11, "Live Chat", "Whatsapp 1")}>
+        <span className="tombol full primary lchat" onClick={() => handleClick(11, "Live Chat", "Whatsapp 1")}>
           <Icon icon="simple-icons:livechat" />
           Livechat
         </span>
@@ -604,7 +604,7 @@ export const DepositPage = () => {
           <Icon icon="cib:whatsapp" />
           Whatsapp
         </span>
-        <span className="tombol full primary" onClick={() => handleClick(11, "Live Chat", "Whatsapp 1")}>
+        <span className="tombol full primary lchat" onClick={() => handleClick(11, "Live Chat", "Whatsapp 1")}>
           <Icon icon="simple-icons:livechat" />
           Livechat
         </span>
@@ -969,7 +969,7 @@ if (showTransaksiDiproses || initialStatus === "Waiting") {
                   <Icon icon="cib:whatsapp" />
                   Whatsapp
                 </span>
-                <span className="tombol full primary" onClick={() => handleClick(11, "Live Chat", "Whatsapp 1")}>
+                <span className="tombol full primary lchat" onClick={() => handleClick(11, "Live Chat", "Whatsapp 1")}>
                   <Icon icon="simple-icons:livechat" />
                   Livechat
                 </span>
@@ -985,7 +985,7 @@ if (showTransaksiDiproses || initialStatus === "Waiting") {
                   <Icon icon="cib:whatsapp" />
                   Whatsapp
                 </span>
-                <span className="tombol full primary" onClick={() => handleClick(11, "Live Chat", "Whatsapp 1")}>
+                <span className="tombol full primary lchat" onClick={() => handleClick(11, "Live Chat", "Whatsapp 1")}>
                   <Icon icon="simple-icons:livechat" />
                   Livechat
                 </span>
