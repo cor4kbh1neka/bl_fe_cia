@@ -112,7 +112,7 @@ const Promosi = () => {
                           <img
                             key={i}
                             src="/assets/img/GBCOIN.webp"
-                            alt="coin"
+                            alt="global bola coin"
                             className={`coin${i + 1}`}
                           />
                         ))}
@@ -149,7 +149,7 @@ const Promosi = () => {
                           <img
                             key={i}
                             src="/assets/img/GBCOIN.webp"
-                            alt="coin"
+                            alt="global bola coin"
                             className={`coin${i + 1}`}
                           />
                         ))}

@@ -14,6 +14,7 @@ export const HistorybetdetailPage = () => {
     const fetchData = async () => {
       const response = await getDetailbet(invoice, portopolio, access);
       setDetailBet(response.result[0]);
+      console.log(response.result[0]);
     };
 
     fetchData();
@@ -31,7 +32,6 @@ export const HistorybetdetailPage = () => {
     
     return formattedDate;
   };
-
   const isOrderTimePastKickOff = (orderTime, kickOffTime) => {
     return new Date(orderTime) > new Date(kickOffTime);
   };
