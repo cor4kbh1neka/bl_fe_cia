@@ -2,6 +2,7 @@ import { Icon } from "@iconify/react";
 import React, { useRef, useEffect, useState } from "react";
 import { fetchDataPopular, dataCompetition } from "../services/api.service";
 import Swal from "sweetalert2";
+import { Gamesbar } from "./Gamesbar";
 
 const Popular = () => {
   const bungkusPopularRef = useRef(null);
@@ -120,7 +121,13 @@ const Popular = () => {
 
   return (
     <div className="secpopular">
+      <Gamesbar activeGame="popular match" />
       <div className="secgrouppopular">
+        <img
+          className="globalbolaplayer"
+          src="/assets/img/298166678_10159879671529597_3324265039382551123_n.webp"
+          alt="global bola player"
+        />
         <span className="headpopular">popular matches</span>
         <div className="grouppopular">
           <div

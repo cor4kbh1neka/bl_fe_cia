@@ -57,7 +57,7 @@ export const Promosikonten = () => {
                 <img
                   key={i}
                   src="/assets/img/GBCOIN.webp"
-                  alt="coin"
+                  alt="coin global bola"
                   className={`coinpromo${i + 1}`}
                 />
               ))}

@@ -140,7 +140,7 @@ export const DepositPage = () => {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
-              utilitiesgenerate: import.meta.env.VITE_CR_ONE_UTILI,
+              utilitiesgenerate: import.meta.env.VITE_CR_ONE_UTILI_TWO,
               Authorization: `Bearer ${accesstoken}`,
               'x-customblhdrs' : import.meta.env.VITE_CR_ONE_AUTHORIZATION_TOKEN
             },
@@ -471,16 +471,12 @@ export const DepositPage = () => {
 
   const handleDownloadBarcode = () => {
     const barcodeImage = document.querySelector(".listbarcode.left img");
-    const barcodeUrl = barcodeImage.src;
+    const barcodeUrl = barcodeImage.src.replace('https://sinarperak.b-cdn.net', '/globalbola');
     const bankName = document.getElementById("pilihanbank").value;
-    const accountName = document.querySelector(
-      ".valuedatarekening.narek",
-    ).innerText;
-    const accountNumber = document.querySelector(
-      ".valuedatarekening.norek",
-    ).innerText;
+    const accountName = document.querySelector(".valuedatarekening.narek").innerText;
+    const accountNumber = document.querySelector(".valuedatarekening.norek").innerText;
     const fileName = `${bankName}-${accountName}-${accountNumber}.png`;
-
+  
     fetch(barcodeUrl)
       .then((response) => response.blob())
       .then((blob) => {
@@ -506,7 +502,7 @@ export const DepositPage = () => {
           text: "URL barcode tidak valid, hubungi admin",
         });
       });
-  };
+  };  
 
   const handleCopyRekening = () => {
     const nomorRekeningElement = document.querySelector(".valuedatarekening.norek");
@@ -566,7 +562,7 @@ export const DepositPage = () => {
           <Icon icon="cib:whatsapp" />
           Whatsapp
         </span>
-        <span className="tombol full primary lchat" onClick={() => handleClick(11, "Live Chat", "Whatsapp 1")}>
+        <span className="tombol full tmblivechat" onClick={() => handleClick(11, "Live Chat", "Whatsapp 1")}>
           <Icon icon="simple-icons:livechat" />
           Livechat
         </span>
@@ -585,7 +581,7 @@ export const DepositPage = () => {
           <Icon icon="cib:whatsapp" />
           Whatsapp
         </span>
-        <span className="tombol full primary lchat" onClick={() => handleClick(11, "Live Chat", "Whatsapp 1")}>
+        <span className="tombol full tmblivechat" onClick={() => handleClick(11, "Live Chat", "Whatsapp 1")}>
           <Icon icon="simple-icons:livechat" />
           Livechat
         </span>
@@ -604,7 +600,7 @@ export const DepositPage = () => {
           <Icon icon="cib:whatsapp" />
           Whatsapp
         </span>
-        <span className="tombol full primary lchat" onClick={() => handleClick(11, "Live Chat", "Whatsapp 1")}>
+        <span className="tombol full tmblivechat" onClick={() => handleClick(11, "Live Chat", "Whatsapp 1")}>
           <Icon icon="simple-icons:livechat" />
           Livechat
         </span>
@@ -656,7 +652,7 @@ export const DepositPage = () => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        utilitiesgenerate: import.meta.env.VITE_CR_ONE_UTILI,
+        utilitiesgenerate: import.meta.env.VITE_CR_ONE_UTILI_TWO,
         Authorization: `Bearer ${accesstoken}`,
         'x-customblhdrs': import.meta.env.VITE_CR_ONE_AUTHORIZATION_TOKEN
       },
@@ -670,6 +666,7 @@ export const DepositPage = () => {
   
     if (checkLastTransactionResponse.ok) {
       const data = await checkLastTransactionResponse.json();
+      window.location.reload();
       if (data.status === "Waiting") {
         Swal.fire({
           title: "Deposit Masih Diproses",
@@ -969,7 +966,7 @@ if (showTransaksiDiproses || initialStatus === "Waiting") {
                   <Icon icon="cib:whatsapp" />
                   Whatsapp
                 </span>
-                <span className="tombol full primary lchat" onClick={() => handleClick(11, "Live Chat", "Whatsapp 1")}>
+                <span className="tombol full tmblivechat" onClick={() => handleClick(11, "Live Chat", "Whatsapp 1")}>
                   <Icon icon="simple-icons:livechat" />
                   Livechat
                 </span>
@@ -985,7 +982,7 @@ if (showTransaksiDiproses || initialStatus === "Waiting") {
                   <Icon icon="cib:whatsapp" />
                   Whatsapp
                 </span>
-                <span className="tombol full primary lchat" onClick={() => handleClick(11, "Live Chat", "Whatsapp 1")}>
+                <span className="tombol full tmblivechat" onClick={() => handleClick(11, "Live Chat", "Whatsapp 1")}>
                   <Icon icon="simple-icons:livechat" />
                   Livechat
                 </span>
@@ -1001,7 +998,7 @@ if (showTransaksiDiproses || initialStatus === "Waiting") {
                   <Icon icon="cib:whatsapp" />
                   Whatsapp
                 </span>
-                <span className="tombol full primary" onClick={() => handleClick(11, "Live Chat", "Whatsapp 1")}>
+                <span className="tombol full tmblivechat" onClick={() => handleClick(11, "Live Chat", "Whatsapp 1")}>
                   <Icon icon="simple-icons:livechat" />
                   Livechat
                 </span>
