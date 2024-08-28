@@ -667,21 +667,21 @@ export const dataGameslogin = [
           //     "nmprovider": "PragmaticPlay",
           //     "img": "../assets/img/games/provider/pragmaticplay.webp"
           // },
-          {
-              "id": "2",
-              "nmprovider": "PGSoft",
-              "img": "../assets/img/games/provider/pgsoft.webp"
-          },
+          // {
+          //     "id": "2",
+          //     "nmprovider": "PGSoft",
+          //     "img": "../assets/img/games/provider/pgsoft.webp"
+          // },
           // {
           //     "id": "3",
           //     "nmprovider": "MicroGaming",
           //     "img": "../assets/img/games/provider/microgaming.webp"
           // },
-          // {
-          //     "id": "4",
-          //     "nmprovider": "SBO Slot",
-          //     "img": "../assets/img/games/provider/sbobetslot.webp"
-          // },
+          {
+              "id": "4",
+              "nmprovider": "SBO Slot",
+              "img": "../assets/img/games/provider/sbobetslot.webp"
+          },
           // {
           //     "id": "5",
           //     "nmprovider": "CQNine",
